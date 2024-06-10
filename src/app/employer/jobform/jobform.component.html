@@ -1,0 +1,98 @@
+<div id="survey-container" class="rev">
+
+  <h1 id="title">Job form</h1>
+
+  <p id="description">Fill in to apply</p>
+
+  <form id="survey-form">
+
+    <!-- name -->
+    <label id="name-label" class="row-label" for="name">Job Designation:</label>
+    <input id="name" class="row-input" type="text" placeholder="Enter Job Designation" required>
+
+    <!-- email -->
+    <label id="email-label" class="row-label" for="email">Job Salary:</label>
+    <input id="email" class="row-input" type="email" placeholder="Enter Salary" required>
+
+    <label id="email-label" class="row-label">Roles and Responsibility:</label>
+    <input id="r" class="revs" type="textarea" placeholder="Roles and Responsibility" >
+    <!-- education dropdown -->
+    <label class="row-label" for="dropdown">Level of education:</label>
+    <select id="dropdown" class="row-input" required>
+      <option disabled selected>Select an option</option>
+      <option value="10th">10th</option>
+      <option value="12th">12th</option>
+      <option value="UG">UG</option>
+      <option value="PG">PG</option>
+    </select>
+
+    <!-- years of experience -->
+    <label id="number-label" class="row-label" for="number">Years of experience (optional):</label>
+    <input id="number" class="row-input" type="number" placeholder="Enter number of years of experience" min="0" max="50">
+
+    <!-- programs checkbox -->
+    <p class="row-label">Known programs:</p>
+
+    <label class="row-input small" for="box-windows">
+      <input type="checkbox" id="box-windows" name="checkbox" value="windows">
+      <span class="inline-label">Windows</span>
+    </label>
+
+    <label class="row-input small" for="box-word">
+      <input type="checkbox" id="box-word" name="checkbox" value="word">
+      <span class="inline-label">Word</span>
+    </label>
+
+    <label class="row-input small" for="box-excel">
+      <input type="checkbox" id="box-excel" name="checkbox" value="excel">
+      <span class="inline-label">Excel</span>
+    </label>
+
+    <label class="row-input small" for="box-powerpoint">
+      <input type="checkbox" id="box-powerpoint" name="checkbox" value="powerpoint">
+      <span class="inline-label">Power Point</span>
+    </label>
+
+    <label class="row-input small" for="box-outlook">
+      <input type="checkbox" id="box-outlook" name="checkbox" value="outlook">
+      <span class="inline-label">Outlook</span>
+    </label>
+
+    <!-- salary radio -->
+    <p class="row-label">Expected salary:</p>
+
+    <label class="row-input small" for="below-3k">
+      <input type="radio" id="below-3k" name="radio" value="below-3k">
+      <span class="inline-label">Below $3K</span>
+    </label>
+
+    <label class="row-input small" for="3k-4k">
+      <input type="radio" id="3k-4k" name="radio" value="3k-4k">
+      <span class="inline-label">$3K - $4K</span>
+    </label>
+
+    <label class="row-input small" for="4k-5k">
+      <input type="radio" id="4k-5k" name="radio" value="4k-5k">
+      <span class="inline-label">$4K - $5K</span>
+    </label>
+
+    <label class="row-input small" for="above-5k">
+      <input type="radio" id="above-5k" name="radio" value="above-5k">
+      <span class="inline-label">Above $5K</span>
+    </label>
+
+    <label class="row-input small" for="dont-know">
+      <input type="radio" id="dont-know" name="radio" value="dont know">
+      <span class="inline-label">Don't know</span>
+    </label>
+
+    <!-- comments textarea -->
+    <label class="row-label" for="comments">Additional informations:</label>
+    <textarea id="comments" placeholder="Enter other informations here..."></textarea>
+
+    <!-- submit button -->
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+
+</div>

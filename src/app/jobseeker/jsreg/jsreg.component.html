@@ -1,0 +1,63 @@
+<div class="container register-form">  
+  <form #myForm="ngForm" (ngSubmit)="addjobseeker(myForm); addlogin(myForm);"> 
+    <div class="note">  
+      <h1> Job Seeker Registration Form </h1>  
+    </div>  
+      
+    <div class="form-content">  
+      <div class="row">  
+        <div class="col-md-6">  
+          <div class="form-group">  
+            <input type="text" class="form-control" placeholder="Enter Name *" name="JsName" ngModel required #myEmpName="ngModel"/>  
+          </div> 
+          <br> 
+          <div class="form-group">  
+            <input type="text" class="form-control" placeholder="Enter Phone Number *" name="JsPhone" ngModel required #myPhone="ngModel"/>  
+          </div>  
+          <br>
+          <div class="form-group">  
+            <select class="form-control" placeholder="Gender" name="JsGender" ngModel required #myGender="ngModel">
+              <option value="" selected disabled hidden>Select the Gender *</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>  
+          </div>  
+        </div>   
+        <div class="col-md-6">  
+          <div class="form-group">  
+            <input type="text" class="form-control" placeholder="Enter Country *" name="JsCountry" ngModel required #myCountry="ngModel"/>  
+          </div>  
+          <br> 
+          <div class="form-group">  
+            <input type="text" class="form-control" placeholder="Enter State *" name="JsState" ngModel required #myState="ngModel"/>  
+          </div>
+          <br>   
+          <div class="form-group">  
+            <input type="text" class="form-control" placeholder="Enter City *" name="JsCity" ngModel required #myCity="ngModel"/>  
+          </div>  
+        </div>              
+      </div>  
+      <div class="row align-items-center mt-4">  
+        <div class="col">  
+          <input type="text" class="form-control" placeholder=" Enter Email Address *" name="JsEmail" ngModel required #myEmail="ngModel">  
+        </div>  
+      </div>
+      <div class="row align-items-center mt-4">  
+        <div class="col">  
+          <input type="password" class="form-control" placeholder=" Enter Password *" name="JsPassword" ngModel required #myPass="ngModel">  
+        </div>  
+      </div>  
+      <div class="row justify-content-start mt-4">  
+        <div class="col">  
+          <div class="form-check">  
+            <label class="form-check-label">  
+              <input type="checkbox" class="form-check-input" ngModel required #mycheck="ngModel">  
+              <a>I hereby agree to the Terms and Conditions. </a>  
+            </label>  
+          </div>  
+          <button type="submit" class="btnSubmit" [disabled]="myForm.invalid"> Submit </button>  
+        </div>  
+      </div>
+    </div>
+  </form>
+</div>
