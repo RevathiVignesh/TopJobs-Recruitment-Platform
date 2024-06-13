@@ -27,7 +27,8 @@ export class JshomeComponent implements OnInit {
 
       if (isValid) {
         // Login successful
-        this.router.navigate(['home']);
+        
+        this.router.navigate(['jsmain', newlogin.emailid]);
         // Implement your login success logic here
       } else {
         // Login failed

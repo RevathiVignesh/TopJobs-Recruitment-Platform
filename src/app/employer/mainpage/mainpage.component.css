@@ -130,3 +130,388 @@ input::-moz-focus-inner {
 #submit:active {
   color: #d0d0d2;
 }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+/* CONTENEDOR */
+.contenedor {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#nombreUsuario {
+  text-transform: uppercase;
+}
+
+button,
+input[type="button"] {
+  /* border: none; */
+  background-color: #333;
+  /* color: white; */
+
+  /* width: 0%; */
+  margin: auto 0;
+  height: 30px;
+  /* background: aqua; */
+  border: none;
+  outline: none;
+  /* border-radius: 40px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+
+button:hover,
+input[type="button"]:hover {
+  background-color: #ddd;
+  /* border:  2px solid black; */
+  color: #333;
+}
+
+button:disabled,
+input[type="button"]:disabled {
+  background-color: gray;
+}
+
+/* CONTENIDO */
+.contenido-principal {
+  background-color: white;
+  margin: 30px auto 30px auto;
+  padding: 0 30px 30px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.usuarios-barra {
+  display: flex;
+  justify-content: space-between;
+}
+
+.busqueda-barra {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+input[type="search"] {
+  float: right;
+  padding: 6px;
+  border: none;
+  /* margin-top: 8px;
+    margin-right: 16px; */
+  font-size: 17px;
+  background-color: #ddd;
+  width: 100%;
+}
+:root {
+  color-scheme: light dark; /* both supported */
+  --ncs-outline-style: none;  
+  --ncs-versionText: '----';  
+  
+  --ncs-color-neutral-00: #FFFFFF; /* 255 */
+  --ncs-color-neutral-05: #F2F2F2; /* 205 */
+  --ncs-color-neutral-10: #e2e2e2; /* 226 */
+  --ncs-color-neutral-20: #cdcdcd; /* 205 */
+  --ncs-color-neutral-30: #b3b3b3; /* 179 */
+  --ncs-color-neutral-60: #696969;
+  --ncs-color-neutral-80: #343434; /* 052 */
+  --ncs-color-neutral-90: #1b1b1b; /* 027 */
+   
+  --ncs-color-background: #3b4551;
+  --ncs-color-primary: #2C353D;
+  --ncs-color-primary-dark: #273039;
+  --ncs-color-primary-black: #151A1E;
+  
+  --ncs-color-highlight: #51947B; /* 51947B 59a688; 3fbe8d; */  
+  --ncs-color-console: #3fbead; /*#b0ffb0;*/ 
+  
+  --ncs-fontsize: 16px; /* 15px  0.9em */
+}
+
+/* TABLA */
+/* Estilos generales para la tabla */
+table {
+  width: 100%;
+
+}
+
+/* Estilos para los encabezados de la tabla */
+
+table, th, td {
+
+  table-layout: auto;
+  color: var(--ncs-color-neutral-10);
+}
+
+th, td {
+}
+
+td {
+  border:1px;
+  border-style: solid;
+height: 50px;
+  font-size: 0.8125em;
+  font-weight: 300;
+}
+
+th {
+  font-size: 1em;
+  font-weight: 400;
+  padding: 3px 20px 0px 0px;
+  min-width: 40px;
+  cursor: pointer;
+  border-bottom: 2px solid var(--ncs-color-primary-black);
+  background-color: rgb(19, 108, 163);
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 2;
+  top: 0;
+  height: 40px;
+  text-align: center;
+}
+.green{
+  background-color:green;
+}
+.blue{
+  background-color:rgb(40, 93, 150);
+}
+
+
+
+
+
+/* RESUMEN DATOS TABLA */
+#resumenTabla {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #resumenTabla {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* PAGINACION Y CONTADOR */
+.paginacion {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#contador {
+  text-align: center;
+  margin-top: 10px;
+  margin: 0 15px 0 15px;
+}
+
+/* FOOTER */
+footer {
+  /* background-color: #333; */
+  background: linear-gradient(
+    180deg,
+    rgba(110, 110, 110, 1) 0%,
+    rgba(134, 134, 134, 1) 50%,
+    rgba(221, 221, 221, 1) 100%
+  );
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+}
+
+footer span {
+  font-style: italic;
+}
+
+/* UTILIDADES */
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.oculto {
+  display: none;
+}
+
+.logo {
+  color: white;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo__icono img {
+  width: 30px;
+}
+
+.logo__nombre {
+  font-weight: 400;
+}
+
+.logo__nombre span {
+  font-weight: 700;
+}
+
+/* NAV BAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar .menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .menu a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.perfil {
+  color: white;
+}
+
+.navbar .menu a:hover,
+.perfil:hover {
+  background-color: #575757;
+  border-radius: 10px;
+}
+
+.navbar .perfil {
+  position: relative;
+}
+
+.navbar .perfil img {
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.desplegable {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .perfil .desplegable {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar .perfil .desplegable a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar .perfil .desplegable a:hover {
+  background-color: #ddd;
+}
+
+.navbar .perfil:hover .desplegable {
+  display: block;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .navbar .menu {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar .menu a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #444;
+  }
+
+  .navbar .menu a:first-child {
+    border-top: none;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar .menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+
+  .perfil {
+    display: none;
+  }
+}
+
+/* Nuevas */
+.contenido-perfil {
+  display: flex;
+}
+
+.contenido-perfil p {
+  margin: auto 10px auto 10px;
+}
+
+.menu-toggle {
+  display: none;
+}

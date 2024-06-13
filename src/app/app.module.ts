@@ -12,6 +12,8 @@ import { EmphomeComponent } from './employer/emphome/emphome.component';
 import { EmpregComponent } from './employer/empreg/empreg.component';
 import { MainpageComponent } from './employer/mainpage/mainpage.component';
 import { JobformComponent } from './employer/jobform/jobform.component';
+import { JobmainComponent } from './jobseeker/jobmain/jobmain.component';
+import { SearchfilterPipe } from './pipes/searchfilter.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { JobformComponent } from './employer/jobform/jobform.component';
     EmphomeComponent,
     EmpregComponent,
     MainpageComponent,
-    JobformComponent
+    JobformComponent,
+    JobmainComponent,
+    SearchfilterPipe,
   ],
   imports: [
     BrowserModule,

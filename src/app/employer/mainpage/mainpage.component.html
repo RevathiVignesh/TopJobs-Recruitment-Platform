@@ -14,6 +14,45 @@
            <button class="btn btn-light">View Posted Job</button>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="jobs">
+
+          
+          <div class="contenedor contenido-principal">
+            <div class="usuarios-barra">
+              <h2>{{employerdet.employeeName}}</h2><i class="fas fa-plus">{{employerdet.employeeCompany}}</i> 
+            </div>
+            <table >
+              <thead>
+                <tr>
+                  <th>JobId</th>
+                  <th>JobDesignation</th>
+                  <th>Candidate ID</th>
+                  <th>Candidate Name</th>
+                  <th>Details</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody >
+                  <tr *ngFor="let i of allapplication">
+                  <ng-container  *ngFor="let a of alljobs" >
+                    <ng-container *ngIf="employerdet.employeeID==a.employeeId"> 
+                  <ng-container *ngIf="i.jobId==a.jobId"> 
+                  <td >{{i.jobId}}</td>
+                  <ng-container *ngFor="let j of alljobs">
+                  <td *ngIf="i.jobId==j.jobId">{{j.jobDesigntion}}</td>
+                  </ng-container>
+                  <td>{{i.jsId}}</td>
+                  <ng-container *ngFor="let k of alljobseeker">
+                    <td *ngIf="i.jsId==k.jsId">{{k.jsName}}</td>
+                  </ng-container>
+                  <td><button class="blue">Details</button></td>
+                  <td ><button type="button" class="green">ShortList</button></td>
+                </ng-container>
+              </ng-container>
+              </ng-container>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 </div>

@@ -121,9 +121,7 @@
     margin-top: calc(2 * var(--space-between));
     height: var(--box-height);
     width: 100%;
-    background: var(--color-4);
-    border: none;
-    border-radius: var(--border-radius);
+    background: black;
     color: white;
     font-weight: 600;
     cursor: pointer;

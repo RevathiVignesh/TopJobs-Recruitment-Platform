@@ -17,7 +17,9 @@ export class EmployerService {
   getemployee(): Observable<empdetails[]> {
     return this.httpClient.get<empdetails[]>(this.baseUrl);
   }
-
+  getEmpById(id:number):Observable<empdetails>{
+    return this.httpClient.get<empdetails>(this.baseUrl+'/'+id);
+  } 
   // Validate user credentials
   validateUser(username: string, password: string): Observable<boolean> {
     return this.getemployee().pipe(

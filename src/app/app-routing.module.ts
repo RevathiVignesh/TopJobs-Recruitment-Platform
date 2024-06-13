@@ -7,6 +7,7 @@ import { EmphomeComponent } from './employer/emphome/emphome.component';
 import { EmpregComponent } from './employer/empreg/empreg.component';
 import { MainpageComponent } from './employer/mainpage/mainpage.component';
 import { JobformComponent } from './employer/jobform/jobform.component';
+import { JobmainComponent } from './jobseeker/jobmain/jobmain.component';
 const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'',redirectTo:'home',pathMatch:'full'},
@@ -15,7 +16,10 @@ const routes: Routes = [
   {path:'employer/emphome',component:EmphomeComponent},
   {path:'empreg',component:EmpregComponent},
   {path:'empmain/:empemail',component:MainpageComponent},
-  {path:'jobform',component:JobformComponent}
+  {path:'jobform',component:JobformComponent},
+  {path:'jobform/:empid',component:JobformComponent},
+  {path:'empmain',component:EmphomeComponent},
+  {path:'jsmain/:jsemail',component:JobmainComponent},
 ];
 
 @NgModule({

@@ -31,7 +31,7 @@ export class EmpregComponent implements OnInit {
     }
 
     this.employer.addemployee(newemployer).subscribe({
-     next:(response)=>{this.router.navigate(['home'])},
+     next:(response)=>{this.router.navigate(['employer/emphome'])},
      error:(err)=>{console.log(err)}
    })
    

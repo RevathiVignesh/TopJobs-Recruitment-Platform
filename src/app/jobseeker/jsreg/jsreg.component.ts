@@ -44,7 +44,7 @@ export class JsregComponent implements OnInit {
       password:myForm.value.JsPassword,
     }
     this.login.addlogin(newlogin).subscribe({
-      next:(response)=>{this.router.navigate(['home'])},
+      next:(response)=>{this.router.navigate(['jobseeker/jshome'])},
       error:(err)=>{console.log(err)}
     })
   }
